@@ -4,6 +4,7 @@ const AddTask = ({ onAdd }) => {
   const [text, setText] = useState('')
   const [day, setDay] = useState('')
   const [reminder, setReminder] = useState(false)
+  //const [type, setType] = useState('')
 
   const onSubmit = (e) => {
     e.preventDefault()
@@ -13,7 +14,7 @@ const AddTask = ({ onAdd }) => {
       return
     }
 
-    onAdd({ text, day, reminder })
+    onAdd({ text, day, reminder, type })
 
     setText('')
     setDay('')
@@ -48,6 +49,13 @@ const AddTask = ({ onAdd }) => {
           value={reminder}
           onChange={(e) => setReminder(e.currentTarget.checked)}
         />
+        //<div className='form-control form-control'>
+        //<label>Set Type</label>
+        //<input
+        //  type='text'
+        //  value={type}
+        //  onChange={(e) => setType(e.target.value)}
+        // />
       </div>
 
       <input type='submit' value='Save Task' className='btn btn-block' />
