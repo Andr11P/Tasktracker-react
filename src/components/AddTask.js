@@ -1,4 +1,5 @@
 import { useState } from 'react'
+
 // SetType is curently in the development
 const AddTask = ({ onAdd }) => {
   const [text, setText] = useState('')
@@ -8,7 +9,6 @@ const AddTask = ({ onAdd }) => {
 
   const onSubmit = (e) => {
     e.preventDefault()
-    // if there is no text we returning alert
     if (!text) {
       alert('Please add a task')
       return
