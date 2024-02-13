@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react';
 
 // SetType is curently in the development
 const AddTask = ({ onAdd }) => {
@@ -63,4 +63,4 @@ const AddTask = ({ onAdd }) => {
   )
 }
 
-export default AddTask
+export default AddTask;
